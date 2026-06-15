@@ -2,25 +2,20 @@
 
 ## Overview
 
-Smart Environment Monitoring System is an industrial-style monitoring application developed using STM32 and PyQt5.
+Smart Environment Monitoring System is an industrial-style real-time monitoring application developed using STM32 and PyQt5.
 
-The system performs real-time monitoring of:
+The system continuously monitors environmental and security parameters using multiple sensors and displays live data through a professional desktop GUI.
 
-* Temperature
-* Humidity
-* Light Intensity
-* Intrusion Detection
-* RGB Status Monitoring
+The application provides:
 
-The GUI provides:
-
-* Live dashboard
-* Alerts & logs
-* Reports generation
-* CSV/PDF export
-* User management system
-* Dark/Light mode
-* Serial communication with STM32
+* Real-time sensor monitoring
+* Industrial-style dashboard
+* Alerts & logs system
+* CSV/PDF report generation
+* User authentication system
+* Admin/User role management
+* Dark/Light mode support
+* UART serial communication with STM32
 
 ---
 
@@ -28,15 +23,16 @@ The GUI provides:
 
 ✔ Real-time STM32 UART communication
 ✔ Industrial PyQt5 GUI
-✔ Temperature & humidity monitoring
-✔ LDR-based light monitoring
+✔ Live temperature & humidity monitoring
+✔ LDR-based light intensity monitoring
 ✔ Intrusion detection system
-✔ RGB indication system
-✔ Alarm logging system
-✔ Reports export (CSV/PDF)
+✔ RGB status indication system
+✔ Alarm logging & alert management
+✔ CSV/PDF report export
 ✔ Login authentication system
-✔ Admin/User role management
+✔ Admin/User role access
 ✔ Dark/Light theme switching
+✔ Real-time serial data visualization
 
 ---
 
@@ -48,18 +44,19 @@ The GUI provides:
 * IR Tracking Sensor
 * RGB LED
 * Buzzer
-* Rotary Encoder
 
 ---
 
-# Software Used
+# Software & Technologies Used
 
 * STM32CubeIDE
-* PyQt5
 * Python
+* PyQt5
 * SQLite
+* PySerial
 * QtAwesome
 * PyQtGraph
+* ReportLab
 
 ---
 
@@ -99,35 +96,46 @@ TEMP:29,HUM:62,LDR:301,TRACK:1,RGB:2,STATUS:NORMAL
 
 # Demo Video
 
-Watch project demo here:
+Watch the complete project demonstration here:
 
-[Project Demo Video](https://your-video-link-here)
+[▶ Smart Monitoring System Demo](videos/smart_monitoring.mp4)
 
 ---
 
-# Installation
+# Sample Reports
 
-```bash
-pip install -r requirements.txt
-```
+The system supports professional report generation and export functionality.
 
-Run:
+Generated sample reports included in this repository:
 
-```bash
-python main.py
-```
+* PDF Report: `150626.pdf`
+* CSV Report: `report150626.csv`
+
+Reports are available inside the `/exports` directory.
+
+---
+
+
+# How to Run
+
+1. Connect STM32 board via USB
+2. Open project in VS Code or PyCharm
+3. Install required Python libraries
+4. Run `main.py`
+5. Ensure correct COM port is selected
 
 ---
 
 # Future Scope
 
 * IoT cloud integration
-* Mobile app support
-* Email/SMS alerts
-* AI-based anomaly detection
 * Remote monitoring system
+* Mobile application support
+* Email/SMS alert system
+* AI-based anomaly detection
+* Wireless sensor integration
+* Cloud database support
 
 ---
-
 
 
