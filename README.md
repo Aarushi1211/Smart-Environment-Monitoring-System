@@ -72,25 +72,31 @@ TEMP:29,HUM:62,LDR:301,TRACK:1,RGB:2,STATUS:NORMAL
 
 ## Login Page
 
-![Login](assets/login.png)
+![Login](assets/login_page.png)
 
 ---
 
 ## Dashboard
 
-![Dashboard](assets/dashboard.png)
+![Dashboard](assets/dashboard_page.png)
 
 ---
 
 ## Reports Page
 
-![Reports](assets/reports.png)
+![Reports](assets/reports_page.png)
 
 ---
 
 ## Alerts & Logs
 
-![Alerts](assets/alerts.png)
+![Alerts](assets/alert_page.png)
+
+---
+
+## About
+
+![Alerts](assets/about_page.png)
 
 ---
 
